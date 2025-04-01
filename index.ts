@@ -41,7 +41,7 @@ const program = new Command(packageJson.name)
   .version(
     packageJson.version,
     '-v, --version',
-    'Output the current version of create-next-app.'
+    'Output the current version of create-rest-app.'
   )
   .argument('[directory]')
   .usage('[directory] [options]')
@@ -77,7 +77,7 @@ const program = new Command(packageJson.name)
   )
   .option(
     '--reset, --reset-preferences',
-    'Reset the preferences saved for create-next-app.'
+    'Reset the preferences saved for create-rest-app.'
   )
   .option(
     '--skip-install',
@@ -129,7 +129,7 @@ const packageManager: PackageManager = !!opts.useNpm
         : getPkgManager()
 
 async function run(): Promise<void> {
-  const conf = new Conf({ projectName: 'create-next-app' })
+  const conf = new Conf({ projectName: 'create-rest-app' })
 
   if (opts.resetPreferences) {
     const { resetPreferences } = await prompts({
@@ -481,9 +481,9 @@ async function notifyUpdate(): Promise<void> {
         pnpm: 'pnpm add -g',
         bun: 'bun add -g',
       }
-      const updateMessage = `${global[packageManager]} create-next-app`
+      const updateMessage = `${global[packageManager]} create-rest-app`
       console.log(
-        yellow(bold('A new version of `create-next-app` is available!')) +
+        yellow(bold('A new version of `create-rest-app` is available!')) +
           '\n' +
           'You can update by running: ' +
           cyan(updateMessage) +

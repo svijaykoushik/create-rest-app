@@ -1,21 +1,21 @@
 {
-  "name": "create-next-app",
-  "version": "15.3.0-canary.26",
+  "name": "create-rest-app",
+  "version": "1.0.0",
   "keywords": [
-    "react",
-    "next",
-    "next.js"
+    "rest api",
+    "express",
+    "express.js"
   ],
-  "description": "Create Next.js-powered React apps with one command",
+  "description": "Create Express.js powered REST API server with one command",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vercel/next.js",
-    "directory": "packages/create-next-app"
+    "url": "https://github.com/svijaykoushik/create-rest-app",
+    "directory": "."
   },
-  "author": "Next.js Team <support@vercel.com>",
+  "author": "Vijaykoushik, S. <svijaykoushik@hotmail.com>",
   "license": "MIT",
   "bin": {
-    "create-next-app": "./dist/index.js"
+    "create-rest-app": "./dist/index.js"
   },
   "files": [
     "dist"
@@ -32,7 +32,7 @@
     "@types/async-retry": "1.4.2",
     "@types/cross-spawn": "6.0.0",
     "@types/node": "20.14.2",
-    "@types/prompts": "2.4.2",
+    "@types/prompts": "^2.4.2",
     "@types/tar": "6.1.13",
     "@types/validate-npm-package-name": "4.0.2",
     "@vercel/ncc": "0.38.1",
@@ -46,6 +46,7 @@
     "prettier-plugin-tailwindcss": "0.6.2",
     "prompts": "2.4.2",
     "tar": "7.4.3",
+    "typescript": "^5.8.2",
     "update-check": "1.5.4",
     "validate-npm-package-name": "5.0.1"
   },
